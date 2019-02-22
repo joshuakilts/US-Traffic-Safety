@@ -1,5 +1,5 @@
 # US-Traffic-Safety
-
+```
 library(ggplot2)
 
 
@@ -136,3 +136,4 @@ cor(subset(data$Population,data$Year<1972),subset(data$Deaths,data$Year<1972))
 cor(subset(data$VMT,data$Year>1972),subset(data$Deaths,data$Year>1972))
 
 cor(subset(data$VMT,data$Year<1972),subset(data$Deaths,data$Year<1972))
+```
