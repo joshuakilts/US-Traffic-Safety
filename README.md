@@ -99,11 +99,17 @@ plot5 <- ggplot(data=data, aes(x=Year, y=Fatalities.2))+
 
 grid.arrange(plot1,plot2,plot3,plot4,plot5, nrow=3)
 ```
-[Rplot all 5](/Images/Rplot.png)
-[ggplot all 5](/Images/ggplot.png)
+## Base R
+![Rplot all 5](/Images/Rplot.png)
 
-[Rplot 1st](/Images/Rplot01.png)
-[ggplot 1st](/Images/ggplot01.png)
+## ggplot
+![ggplot all 5](/Images/ggplot.png)
+
+## Base R
+![Rplot 1st](/Images/Rplot01.png)
+
+## ggplot
+![ggplot 1st](/Images/ggplot01.png)
 ```
 plot1
 
