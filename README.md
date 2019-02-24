@@ -72,60 +72,6 @@ par(mfrow=c(1,1))
 #### Plotting variables over time using base ggplot2
 ```
 plot1 <- ggplot(data=data, aes(x=Year, y=Deaths))+
-  geom_line()+
-  geom_point()+
-  labs(title="US Motor Vehicle Deaths Over Time",x="Year",y="Deaths")+
-  theme_bw()
-#ggsave("MVdeaths.png",dpi=300,width=4,height=3)
-
-plot2 <- ggplot(data=data, aes(x=Year, y=VMT))+
-  geom_line()+
-  geom_point()+
-  labs(title="Miles Traveled by Year in the US",x="Year",y="Miles Travelled (in billions)")+
-  theme_bw()
-#ggsave("MVmiles.png",dpi=300,width=4,height=3)
-
-plot3 <- ggplot(data=data, aes(x=Year, y=Fatalities))+
-  geom_line()+
-  geom_point()+
-  labs(title="Deaths per 100 Million Miles Travelled",x="Year",y="Deaths (per 100 million miles travelled)")+
-  theme_bw()
-#ggsave("MVfatalitiesPer100mil.png",dpi=300,width=4,height=3)
-
-plot4 <- ggplot(data=data, aes(x=Year, y=Population))+
-  geom_line()+
-  geom_point()+
-  labs(title="US Population Over Time",x="Year",y="Population (in millions)")+
-  theme_bw()
-#ggsave("USpop.png",dpi=300,width=4,height=3)
-
-plot5 <- ggplot(data=data, aes(x=Year, y=Fatalities.2))+
-  geom_line()+
-  geom_point()+
-  labs(title="US Motor Vehicle Fatalities Per 100,000 people",x="Year",y="Deaths (per 100,000 people)")+
-  #geom_vline(xintercept=c(1930,1950,1970,1974))+
-  #geom_text(aes(x=2008, label="2008",y=20), angle=270)+
-  theme_bw()
-#ggsave("MVdeathsPC.png",dpi=300,width=4,height=3)
-
-
-grid.arrange(plot1,plot2,plot3,plot4,plot5, nrow=3)
-```
-## Base R (all 5 plots)
-![Rplot all 5](/Images/Rplot.png)
-
-## ggplot (all 5 plots)
-![ggplot all 5](/Images/ggplot.png)
-
-## Base R (single plot)
-![Rplot 1st](/Images/Rplot01.png)
-
-## ggplot (single plot)
-![ggplot 1st](/Images/ggplot01.png)
-
-ggplot definitely looks better. There are also more customizations to be made where base R starts to get limited:
-```
-plot1 <- ggplot(data=data, aes(x=Year, y=Deaths))+
   geom_line(col="darkblue",size=1)+
   theme_bw()+
   theme(plot.title=element_text(hjust=.5))+
@@ -172,8 +118,24 @@ plot5 <- ggplot(data=data, aes(x=Year, y=Fatalities.2))+
 
 
 grid.arrange(plot1,plot2,plot3,plot4,plot5, nrow=3)
+
 ```
-Plots 1:5
+## Base R (all 5 plots)
+![Rplot all 5](/Images/Rplot.png)
+
+## ggplot (all 5 plots)
+![ggplot all 5](/Images/ggplot02.png)
+
+## Base R (single plot)
+![Rplot 1st](/Images/Rplot01.png)
+
+## ggplot (single plot)
+![ggplot 1st](/Images/ggplot04.png)
+
+ggplot definitely looks better. There are also more customizations to be made where base R starts to get limited:
+```
+
+```
 
 #### Analysis
 Create percent change variables for deaths and deaths per 100 million miles driven
