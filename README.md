@@ -1,8 +1,8 @@
 # US-Traffic-Safety
 ### Libraries
-This analysis was done in R  
-ggplot2 (graphing)  
-gridExtra (displaying multiple plots on same graphic)
+This analysis was done in R using the following packages:  
+  * ggplot2 (graphing)  
+  * gridExtra (displaying multiple plots on same graphic)
 ```R
 library(ggplot2) 
 library(gridExtra)
@@ -12,7 +12,7 @@ Data is read in from file
 ```R
 data <- read.table(".../data.txt",header=T)
 ```
-Numeric data has commas, shich need to be removed
+Numeric data has commas, which need to be removed
 ```R
 data$Deaths <- gsub(",","",data$Deaths)
 data$VMT<- gsub(",","",data$VMT)
@@ -24,7 +24,7 @@ data$Deaths <- as.numeric(data$Deaths)
 data$VMT <- as.numeric(data$VMT)
 data$Population <- as.numeric(data$Population)
 ```
-Converting from people to millions of people for convenience
+Converting US population from people to millions of people for convenience
 ```R
 data$Population <- data$Population/10^6
 ```
@@ -69,6 +69,8 @@ plot(data$Year, data$Fatalities.2,
 
 par(mfrow=c(1,1))
 ```
+![Rplot all 5](/Images/Rplot.png)
+
 #### Plotting variables over time using base ggplot2
 ```R
 plot1 <- ggplot(data=data, aes(x=Year, y=Deaths))+
@@ -118,21 +120,17 @@ plot5 <- ggplot(data=data, aes(x=Year, y=Fatalities.2))+
 
 
 grid.arrange(plot1,plot2,plot3,plot4,plot5, nrow=3)
-
 ```
-## Base R (all 5 plots)
-![Rplot all 5](/Images/Rplot.png)
-
-## ggplot (all 5 plots)
 ![ggplot all 5](/Images/ggplot02.png)
 
-## Base R (single plot)
+#### Comparing base R graphics to ggplot
+##### Base R (single plot)
 ![Rplot 1st](/Images/Rplot01.png)
 
-## ggplot (single plot)
+##### ggplot (single plot)
 ![ggplot 1st](/Images/ggplot04.png)
 
-ggplot definitely looks better. There are also more customizations to be made where base R starts to get limited:
+ggplot definitely looks better. Though R base is good for quick plots, ggplot provides good, quality graphics.
 
 #### Analysis
 Create percent change variables for deaths and deaths per 100 million miles driven
@@ -148,7 +146,7 @@ for (i in 2:(length(data$Fatalities)-1)){
   data$deathPerPct[i] <- ((data$Fatalities[i+1]-data$Fatalities[i])/data$Fatalities[i])*100
 }
 ```
-Return table of top negative percent changes
+Return table of biggest negative percent changes
 ```R
 topTable <- cbind(head(data[order(data$deathPct),c(1,7)],10),
       head(data[order(data$deathPerPct),c(1,8)],10))
@@ -175,7 +173,6 @@ ggplot(data=data, aes(x=Year, y=Fatalities))+
        x="Year",
        y="Deaths (per 100 million miles travelled)")
 ```
-Plots with vertical lines
 ![plot5](/Images/ggplot05.png)
 ![plot6](/Images/ggplot06.png)
    
