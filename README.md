@@ -182,40 +182,40 @@ Plots with vertical lines
 #### Research of years where negative percent change was highest
 
 ##### 1923
-  *Traffic signals, general awareness of safe vehicle design  
-  *Brakes on all wheels  
+  * Traffic signals, general awareness of safe vehicle design  
+  * Brakes on all wheels  
 
 ##### 1931
-  *Manufacturers awareness of safety  
-  *Safety glass  
-  *Some seatbelt awareness  
+  * Manufacturers awareness of safety  
+  * Safety glass  
+  * Some seatbelt awareness  
 
 ##### 1937
-  *No more sharp/protruding objects on dashboard, padded interior  
-  *First turn signals (buick)  
-  *Automotive Safety Foundation founded  
-  *First highways  
-  *Safety studies  
+  * No more sharp/protruding objects on dashboard, padded interior  
+  * First turn signals (buick)  
+  * Automotive Safety Foundation founded  
+  * First highways  
+  * Safety studies  
 
 ##### 1941
-  *Rise of turnpikes and highways in 1940s  
-  *War, dip in miles driven  
+  * Rise of turnpikes and highways in 1940s  
+  * War, dip in miles driven  
 
 ##### 1945-46
-  *More studies  
+  * More studies  
 
 ##### 1973 
-  *Better crash testing, dummy development  
+  * Better crash testing, dummy development  
 
 ##### 1981
-  *Crash testing being published 2 years before  
+  * Crash testing being published 2 years before  
 
 ##### 1990
-  *Seat belt laws and awareness  
-  *Air bags becoming widespread  
+  * Seat belt laws and awareness  
+  * Air bags becoming widespread  
 
 ##### 2008-2009
-  *Vehicle safety mandates (roof strength)  
-  *Recession  
+  * Vehicle safety mandates (roof strength)  
+  * Recession  
 
 
