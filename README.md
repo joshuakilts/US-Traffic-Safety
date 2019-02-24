@@ -179,7 +179,8 @@ ggplot(data=data, aes(x=Year, y=Fatalities))+
        y="Deaths (per 100 million miles travelled)")
 ```
 Plots with vertical lines
-
+![plot5](/Images/ggplot05)
+![plot6](/Images/ggplot06)
 Analyze top years
 
 #1937:
